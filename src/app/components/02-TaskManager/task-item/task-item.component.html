@@ -1,0 +1,31 @@
+<div class="text-center">
+    <p>
+      <span *ngIf="!isEditingTitle">{{ taskItem!.title }}</span>
+      <input *ngIf="isEditingTitle" type="text" [(ngModel)]="updatedTitle" placeholder="New Title">
+      <span>&nbsp;</span>
+  
+      <span *ngIf="!isEditingDescription">{{ taskItem!.description }}</span>
+      <input *ngIf="isEditingDescription" type="text" [(ngModel)]="updatedDescription" placeholder="New Description">
+      <span>&nbsp;</span>
+      
+      <button mat-icon-button color="primary" (click)="toggleEdit('title')" class="mat-button-margin">
+        <mat-icon>title</mat-icon>
+      </button>
+      
+      <button mat-icon-button color="primary" (click)="toggleEdit('description')" class="mat-button-margin">
+        <mat-icon>description</mat-icon>
+      </button>
+  
+      <button mat-icon-button color="primary" (click)="toggleEdit('all')" class="mat-button-margin">
+        <mat-icon>settings</mat-icon>
+      </button>
+  
+      <button mat-icon-button color="primary" [routerLink]="'/tasks/detail/' + taskItem!.id" class="mat-button-margin">
+        <mat-icon>details</mat-icon>
+      </button>
+  
+      <button mat-icon-button color="primary" (click)="updateTask()" class="mat-button-margin">
+        <mat-icon>save</mat-icon>
+      </button>
+    </p>
+  </div>

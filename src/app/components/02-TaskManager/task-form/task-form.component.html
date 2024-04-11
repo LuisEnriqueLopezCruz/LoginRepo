@@ -1,0 +1,19 @@
+<form class="mat-elevation-z2" (submit)="addTask()" style="width: 300px; margin: auto;">
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput type="text" name="taskTitle" [(ngModel)]="taskTitle" required>
+    <mat-error *ngIf="!taskTitle">Task title can't be blank</mat-error>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input matInput type="text" name="taskDescription" [(ngModel)]="taskDescription" required>
+    <mat-error *ngIf="!taskDescription">Task description can't be blank</mat-error>
+  </mat-form-field>
+  
+  <div class="form-group">
+    <button mat-raised-button color="primary" type="submit">
+      <mat-icon>add</mat-icon> ADD
+    </button>
+  </div>
+</form>

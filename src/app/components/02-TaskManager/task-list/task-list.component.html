@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-12">
+      <div *ngIf="tasks.length === 0" class="well">
+        No Tasks to Show.
+      </div>
+      <div class="col-md-12">
+        <button mat-raised-button color="primary" (click)="toggleTaskItems()">Mostrar/Ocultar</button>
+      </div>
+      <ul class="list-group" *ngIf="mostrarTaskItems"> <!-- Movimos el ngIf aquí -->
+        <li appHighlight class="list-group-item" *ngFor="let task of tasks | search: query">
+          <app-task-item [taskItem]="task"></app-task-item>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

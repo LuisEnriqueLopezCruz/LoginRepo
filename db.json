@@ -1,0 +1,112 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userId": "123",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "phone": "1234567890",
+      "imageUrl": "https://example.com/image.png"
+    },
+    {
+      "id": "2",
+      "userId": "456",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "password456",
+      "phone": "0987654321",
+      "imageUrl": "https://example.com/image2.png"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "userId": "123",
+      "title": "Completar tarea",
+      "description": "Cenar con diosito",
+      "date": "2024-04-10T08:00:00Z",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "userId": "123",
+      "title": "Enviar correo electrónico",
+      "description": "Enviar correo electrónico de seguimiento a clientes",
+      "date": "2024-04-11T10:00:00Z",
+      "completed": false
+    },
+    {
+      "id": "3",
+      "userId": "456",
+      "title": "Reunión de equipo",
+      "description": "Reunión de equipo para discutir el progreso del proyecto",
+      "date": "2024-04-12T14:00:00Z",
+      "completed": false
+    },
+    {
+      "id": "4",
+      "userId": "456",
+      "title": "Actualizar sitio web",
+      "description": "Actualizar contenido en la página de inicio del sitio web",
+      "date": "2024-04-13T09:30:00Z",
+      "completed": false
+    },
+    {
+      "id": "5",
+      "userId": "123",
+      "title": "Llamar al cliente",
+      "description": "Llamar al cliente para discutir los requisitos del proyecto",
+      "date": "2024-04-14T11:00:00Z",
+      "completed": false
+    },
+    {
+      "id": "6",
+      "userId": "123",
+      "title": "Preparar presentación",
+      "description": "Preparar presentación para la reunión de ventas",
+      "date": "2024-04-15T13:00:00Z",
+      "completed": false
+    },
+    {
+      "id": "7",
+      "userId": "456",
+      "title": "Revisar informe financiero",
+      "description": "Revisar el informe financiero mensual",
+      "date": "2024-04-16T10:30:00Z",
+      "completed": false
+    },
+    {
+      "id": "8",
+      "userId": "456",
+      "title": "Planificar evento",
+      "description": "Planificar el evento de lanzamiento del producto",
+      "date": "2024-04-17T15:00:00Z",
+      "completed": false
+    },
+    {
+      "id": "9",
+      "userId": "123",
+      "title": "Entrevista con candidato",
+      "description": "Realizar entrevista con el candidato para el puesto vacante",
+      "date": "2024-04-18T09:00:00Z",
+      "completed": false
+    },
+    {
+      "id": "10",
+      "userId": "456",
+      "title": "Resolver problema técnico",
+      "description": "Investigar y resolver problema técnico en el sistema",
+      "date": "2024-04-19T12:00:00Z",
+      "completed": false
+    },
+    {
+      "id": "8aed",
+      "userId": "123",
+      "title": "Tarea",
+      "description": "Angular",
+      "completed": false,
+      "date": "2024-04-11T04:41:51.088Z"
+    }
+  ]
+}

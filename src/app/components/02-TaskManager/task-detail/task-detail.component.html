@@ -1,0 +1,16 @@
+
+<div *ngIf="task" class="well">
+    <p>
+      <strong> Title : </strong> {{ task.title | myUppercase }}
+    </p>
+    <p>
+      <strong> Description : </strong> {{ task.description }}
+    </p>
+    <p>
+      <strong> Date : </strong> {{ task.date | date:'medium' }}
+    </p>
+    <p>
+      <strong> Completed :</strong> {{ task.completed ? 'Yes' : 'No' | myUppercase }} 
+    </p>
+  </div>
+  
